@@ -12,4 +12,8 @@ export default class Util {
       console.log(`Server running on the port ${port}`);
     });
   }
+
+  public static verifyParams(...params: string[] | number[]): boolean {
+    return params.every((param) => param);
+  }
 }
